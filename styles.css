@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#container div:not(:first-child) {
+  padding: 3px;
+  text-align: center;
+  margin-top: 20px;
+}
+#circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: green;
+  box-sizing: border-box;
+}
+.store {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+button {
+  width: 40%;
+  height: 30px;
+  background-color: rgb(163, 215, 19);
+  border-radius: 6px;
+}
+
+.inner {
+  background-color: white;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  left: 38px;
+  top: 40px;
+}
+.triangel {
+  background-color: transparent;
+  position: relative;
+  left: 38px;
+  top: 40px;
+  width: 0;
+  height: 0;
+  border-bottom: 75px solid rgb(187, 21, 21);
+  border-right: 75px solid transparent;
+}
+.circle-1c {
+  background-color: rgb(238, 10, 181);
+  position: relative;
+  left: 32px;
+  top: 30px;
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.rect {
+  background-color: rgb(97, 64, 3);
+  position: relative;
+  width: 96px;
+  height: 53px;
+  left: 24px;
+  top: 49px;
+  border: 2px solid black;
+}
+.paralal {
+  background-color: rgb(2, 97, 95);
+  position: relative;
+  width: 96px;
+  height: 53px;
+  left: 24px;
+  top: 49px;
+  transform: skew(20deg);
+  border: 2px solid black;
+}
+.diamond {
+  width: 67px;
+  height: 70px;
+  background-color: #007bff;
+  transform: rotate(45deg);
+  position: relative;
+  top: 32px;
+  left: 39px;
+  transform-origin: center;
+  border: 2px solid black;
+}
+h1
+@keyframes scaleAndFade {
+  0% {
+    transform: scale(1); /* Initial scale value for the animation */
+    opacity: 1; /* Initial opacity value for the animation */
+  }
+  50% {
+    transform: scale(1.2); /* Midway scale value for the animation */
+    opacity: 0.8; /* Midway opacity value for the animation */
+  }
+  100% {
+    transform: scale(1); /* Final scale value for the animation */
+    opacity: 1; /* Final opacity value for the animation */
+  }
+}
+
+/* Class for applying the scaling and fading animation */
+.change-background-animation {
+  animation: scaleAndFade 0.5s ease; /* Applies the defined keyframe animation with a 0.5s duration and ease timing function */
+}
